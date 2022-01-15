@@ -26,7 +26,7 @@ for (let i = 0; i < operatorButtons.length; i++) {
             case '=':
                 try {
                     outputHistory.innerText = output.innerText + "=";
-                    if (output.innerText.includes("x")||output.innerText.includes("÷")||output.innerText.includes("-")) {
+                    if (output.innerText.includes("x")||output.innerText.includes("÷") {
                         output.innerText = output.innerText.replace(/x(?!x)/gi, '*');
                         output.innerText = output.innerText.replace(/÷(?!÷)/gi, '/');
                         output.innerText = eval(output.innerText);
